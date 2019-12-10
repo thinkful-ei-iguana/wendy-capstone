@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  font-size: larger;
+}
+
+.menu-links li {
+  list-style-type: none;
+  display: inline;
+}
+#wrapper {
+  border: thick green solid;
+  width: 250px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+#landing-page-banner,
+#landing-page-transform {
+  width: 250px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+}
+
+#landing-page-banner {
+  background: darkblue;
+  color: white;
+}
+#landing-page-banner:hover {
+  margin-top: -100px;
+}
+
+#landing-page-transform {
+  background: darkred;
+  color: antiquewhite;
+}
