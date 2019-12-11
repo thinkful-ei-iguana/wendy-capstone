@@ -23,19 +23,18 @@ body {
 nav {
   height: 50px;
   background-color: grey;
+  padding: 20px;
 }
 
 .menu-brand {
   font-size: 20px;
   float: left;
-  padding: 20px;
 }
 
-.menu-links li {
+li {
   list-style-type: none;
-  display: inline;
+  display: flex;
   float: right;
-  padding: 20px;
 }
 
 /* button {
