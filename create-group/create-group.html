@@ -7,6 +7,7 @@
     <title>Create a Group</title>
     <link rel="stylesheet" type="text/css" href="create-group.css" />
   </head>
+
   <body>
     <nav>
       <div class="nav-brand">
@@ -15,29 +16,44 @@
     </nav>
     <main role="main">
       <form class="create-group">
-        <label for="group-setting">Privacy Setting</label>
-        <select id="group-setting">
-          <option value="private">Private</option>
-          <option value="public">Public</option>
-        </select>
-        <p class="private-group">
-          <em>Private groups can only be accessed with shared link.</em>
-        </p>
-        <p class="public-group">
-          <em
-            >Anyonce can join or find public groups. Set to private to restrict
-            access.</em
-          >
-        </p>
-        <label for="goal-type">Type of Goal</label>
-        <select id="goal-type">
-          <option value="one-time-event">One-time event</option>
-          <option value="current-goal">Current Goal</option>
-          <option value="stretch-goal">Stretch Goal</option>
-        </select>
+        <fieldset>
+          <h3>Create a Group</h3>
+          <label for="group-setting">Privacy Setting</label>
+          <select id="group-setting">
+            <option value="private">Private</option>
+            <option value="public">Public</option>
+          </select>
+          <p class="private-group">
+            <em>Private groups can only be accessed with shared link.</em>
+          </p>
+          <p class="public-group">
+            <em
+              >Anyonce can join or find public groups. Set to private to
+              restrict access.</em
+            >
+          </p>
+          <label for="goal-type">Type of Goal</label>
+          <select id="goal-type">
+            <option value="evente">Event</option>
+            <option value="current-goals">Current Goal</option>
+            <option value="stretch-goals">Stretch Goal</option>
+            <option value="future-goals">Future Goal</option>
+            <option value="dream-goals">Dream Goal</option>
+          </select>
 
-        <label for="target-date">Target date</label>
-        <input type="date" />
+          <label for="goal-name">Goal/Intention</label>
+          <input type="text" id="goal-name" />
+          <label for="target-date">Target date</label>
+          <input type="date" id="target-date" />
+
+          <label for="tag">Add tags</label>
+          <input type="tag" id="tag" />
+          <label for="description">Description</label>
+          <textarea id="description"> </textarea>
+          <div>
+            <a href="#">Share link with friends</a>
+          </div>
+        </fieldset>
       </form>
     </main>
   </body>
