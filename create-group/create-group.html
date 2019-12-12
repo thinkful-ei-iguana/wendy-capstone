@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Create a Group</title>
+    <link rel="stylesheet" type="text/css" href="create-group.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-brand">
+        <div class="menu-brand">WeHive</div>
+      </div>
+    </nav>
+    <main role="main">
+      <form class="create-group">
+        <label for="group-setting">Privacy Setting</label>
+        <select id="group-setting">
+          <option value="private">Private</option>
+          <option value="public">Public</option>
+        </select>
+        <p class="private-group">
+          <em>Private groups can only be accessed with shared link.</em>
+        </p>
+        <p class="public-group">
+          <em
+            >Anyonce can join or find public groups. Set to private to restrict
+            access.</em
+          >
+        </p>
+      </form>
+    </main>
+  </body>
+</html>
