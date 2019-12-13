@@ -18,14 +18,7 @@
         <li>Log out</li>
       </ul>
     </nav>
-    <header>
-      <h1>[ TODAY ]</h1>
-      <h4><em>"Inspirational quote of the day here"</em></h4>
-      <div class="description">
-        <h5>Event: Plan mom's 75th bday</h5>
-        <h5>Members in hive: Alex, Julia</h5>
-      </div>
-    </header>
+
     <main>
       <div class="side-bar-nav">
         <h1>My Hive</h1>
@@ -45,29 +38,57 @@
             width="30px"
           />
           <li>Run 100 miles in South Africa</li>
-          <li>Publish children's book</li>
+          <li>Write a novel</li>
         </div>
         <div class="side-bar-item">Future Goals</div>
         <div class="side-bar-item">Dream Goals</div>
         <div class="side-bar-item">Completed Goals</div>
         <button class="add-goal">Add Goal</button>
       </div>
-      <section></section>
+      <section>
+        <header>
+          <h1>[ TODAY ]</h1>
+          <h4><em>"Inspirational quote of the day here"</em></h4>
+          <div class="description">
+            <h5>Stretch Goal: Write a novel</h5>
+            <h5><a href="#">Invite others to this hive</a></h5>
+            <input type="email" />
+            <button type="submit">Send hiVite</button>
+          </div>
+        </header>
+      </section>
       <section>
         <div class="user-entries">
-          <label for="action-record">Action Performed Today</label>
-          <input type="text" id="action-record" />
-          <button type="submit" class="save-button">Save</button>
-          <label for="time-record">Time Spent on Activity</label>
-          <input type="time" id="time-record" />
+          <form class="progress-check">
+            <label for="action-record">Action Performed Today</label>
+            <input type="text" id="action-record" />
+            <label for="time-record">Time Spent on Activity</label>
+            <input type="time" id="time-record" />
+            <label for="rating">Rate Satisfaction with Progress</label>
+            <input
+              type="range"
+              id="rating"
+              name="satisfaction"
+              min="0"
+              max="10"
+            />
+            <div>
+              <input type="checkbox" id="private" />
+              <label for="private">Do Not Send to Hive</label>
+            </div>
 
+            <button type="submit" class="save-button">
+              Create some buzz
+            </button>
+          </form>
+          <label for="diary">Diary</label>
+          <textarea id="diary"></textarea>
           <button type="submit" class="save-button">Save</button>
-
-          <label for="notes">Daily Notes</label>
-          <textarea id="notes"></textarea>
+          <label for="reminders">Reminders</label>
+          <textarea id="reminders"></textarea>
+          <button type="submit" class="save-button">Save</button>
         </div>
       </section>
     </main>
-    <button type="submit" class="save-button">Save Progress</button>
   </body>
 </html>
