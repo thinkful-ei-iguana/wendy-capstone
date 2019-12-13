@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>[username]'s Hive</title>
-    <link rel="stylesheet" type="text/css" href="goal-tracker.css" />
+    <link rel="stylesheet" type="text/css" href="dashboard.css" />
   </head>
 
   <body>
@@ -13,9 +13,22 @@
       <div class="nav-brand">
         <div class="menu-brand">WeHive</div>
       </div>
+      <ul class="menu-links">
+        <li>Find Groups</li>
+        <li>Log out</li>
+      </ul>
     </nav>
+    <header>
+      <h1>[ TODAY ]</h1>
+      <h4><em>"Inspirational quote of the day here"</em></h4>
+      <div class="description">
+        <h5>Event: Plan mom's 75th bday</h5>
+        <h5>Members in hive: Alex, Julia</h5>
+      </div>
+    </header>
     <main>
       <div class="side-bar-nav">
+        <h1>My Hive</h1>
         <div class="side-bar-item">Events</div>
         <div class="side-bar-item-expanded">
           <img
@@ -37,16 +50,24 @@
         <div class="side-bar-item">Future Goals</div>
         <div class="side-bar-item">Dream Goals</div>
         <div class="side-bar-item">Completed Goals</div>
+        <button class="add-goal">Add Goal</button>
       </div>
+      <section></section>
       <section>
-        <header>
-          <h1>January 2020</h1>
-          <h4><em>"Inspirational quote of the day here"</em></h4>
-        </header>
-        <input type="checkbox" name="vehicle1" value="Bike" />
-        <input type="checkbox" name="vehicle2" value="Car" />
-        <input type="checkbox" name="vehicle3" value="Boat" checked />
+        <div class="user-entries">
+          <label for="action-record">Action Performed Today</label>
+          <input type="text" id="action-record" />
+          <button type="submit" class="save-button">Save</button>
+          <label for="time-record">Time Spent on Activity</label>
+          <input type="time" id="time-record" />
+
+          <button type="submit" class="save-button">Save</button>
+
+          <label for="notes">Daily Notes</label>
+          <textarea id="notes"></textarea>
+        </div>
       </section>
     </main>
+    <button type="submit" class="save-button">Save Progress</button>
   </body>
 </html>
